@@ -46,3 +46,5 @@ W
 'src/app/buildings/[buildingId]/page.tsx,3/d/3d22d60f4133e09c991bd8c4be3a6f5aafeaa07e
 Z
 *node_modules/rehype-react/types/index.d.ts,0/2/02280bee004ba27119a735fea93ee568743be9c9
+F
+.env.development.local,0/f/0fe212be3a1410c8c1b84c710d79d55e3d8f0e1e

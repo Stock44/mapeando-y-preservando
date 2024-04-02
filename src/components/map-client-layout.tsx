@@ -7,8 +7,13 @@ import NavigateBefore from "@material-design-icons/svg/round/navigate_before.svg
 import NavigateNext from "@material-design-icons/svg/round/navigate_next.svg";
 import {twMerge} from "tailwind-merge";
 import BuildingsLayer from "@/components/buildings-layer";
-import Map, {MapRef} from "@/components/map";
+import {type MapRef} from "@/components/map";
 import {BuildingFeatureCollection} from "@/lib/get-all-buildings-geojson";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import('@/components/map'), {
+    ssr: false,
+});
 
 export type MainLayoutProps = {
     readonly children: ReactNode;
