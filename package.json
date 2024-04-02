@@ -9,19 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-design-icons/svg": "^0.14.13",
+    "@svgr/webpack": "^8.1.0",
+    "contentful": "^10.8.6",
+    "framer-motion": "^11.0.24",
+    "lodash": "^4.17.21",
+    "mapbox-gl": "^3.2.0",
+    "next": "14.1.4",
     "react": "^18",
+    "react-aria": "^3.32.1",
+    "react-aria-components": "^1.1.1",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "react-remark": "^2.1.0",
+    "tailwind-merge": "^2.2.2",
+    "tailwind-variants": "^0.2.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/geojson": "^7946.0.14",
+    "@types/mapbox-gl": "^3.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "cfimp": "^1.0.40",
+    "contentful-cli": "^3.1.44",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "typescript": "^5"
   }
 }
