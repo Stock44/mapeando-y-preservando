@@ -1,7 +1,8 @@
 import type Building from "@/lib/building";
 import contentful from "@/lib/contentful";
+import {cache} from "react";
 
-export default async function getAllBuildings(): Promise<Building[]> {
+const getAllBuildings = cache(async (): Promise<Building[]> => {
     const entries = await contentful.getEntries({
         content_type: 'building',
     });
@@ -12,4 +13,6 @@ export default async function getAllBuildings(): Promise<Building[]> {
         createdAt: entry.sys.createdAt,
         updatedAt: entry.sys.updatedAt,
     })) as Building[];
-}
+})
+
+export default getAllBuildings;

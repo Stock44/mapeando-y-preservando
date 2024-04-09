@@ -3,7 +3,7 @@
 import {
     forwardRef,
     ReactElement,
-    ReactNode,
+    ReactNode, Ref,
     SyntheticEvent,
     useCallback,
     useEffect,
@@ -24,13 +24,16 @@ export type MapProps = {
     readonly className?: string;
     readonly children?: NullReactComponent | Iterable<NullReactComponent>;
     readonly center?: [number, number];
+    readonly mapRef?: Ref<MapRef>;
 }
 
 export type MapRef = {
     readonly resize: () => void;
+    readonly flyTo: (coordinates: [number, number]) => void;
 }
 
-const Map = forwardRef<MapRef, MapProps>(function Map(props: MapProps, externalMapRef) {
+const Map = function Map(props: MapProps) {
+    const {mapRef: externalMapRef} = props;
     const {className, children, center} = props;
 
     const mapContainerRef = useRef<HTMLDivElement>(null)
@@ -41,6 +44,12 @@ const Map = forwardRef<MapRef, MapProps>(function Map(props: MapProps, externalM
     useImperativeHandle(externalMapRef, () => ({
         resize() {
             mapRef.current?.resize();
+        },
+        flyTo(coordinates) {
+            mapRef.current?.flyTo({
+                center: coordinates,
+                zoom: 18,
+            })
         }
     }))
 
@@ -68,6 +77,6 @@ const Map = forwardRef<MapRef, MapProps>(function Map(props: MapProps, externalM
             <div className={twMerge('', className)} ref={mapContainerRef}/>
         </MapProvider>
     )
-});
+}
 
 export default Map;

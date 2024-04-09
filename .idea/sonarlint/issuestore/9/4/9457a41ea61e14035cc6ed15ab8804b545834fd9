@@ -1,4 +1,7 @@
 
-Ltypescript:S1128"*Remove this unused import of 'useContext'.(¶­¯8¯§Ïàé1
-Htypescript:S1128"%Remove this unused import of 'frame'.(·Öû­8”—…ßé1
-]typescript:S2137":Do not use "Map" to declare a variable - use another name.(«Ÿ¥¨8þÕ·†ê1
+xtypescript:S1128"*Remove this unused import of 'forwardRef'.(£ª¯”ÿÿÿÿÿ8Õ™üžì1J$3eb34113-31b4-4f00-9c10-6f5af8c78df9
+xtypescript:S1128"*Remove this unused import of 'useContext'.(£ª¯”ÿÿÿÿÿ8Õ™üžì1J$3bc65ea1-e9ff-42b6-9ceb-bb2623ae8176
+ntypescript:S1128"%Remove this unused import of 'frame'.(·Öû­8Õ™üžì1J$efb03152-c71c-4a21-be1d-f812082cf8f7
+†typescript:S1128"8Remove this unused import of 'useSelectedLayoutSegment'.(Š‚•ýüÿÿÿÿ8Õ™üžì1J$58b5ee1e-7089-4aec-82e3-9a68dcb7a74a
+ttypescript:S1128"+Remove this unused import of 'getBuilding'.(åÇëþ8Ö™üžì1J$557f8688-07c7-4084-934d-2839493e9393
+ƒtypescript:S2137":Do not use "Map" to declare a variable - use another name.(«Ÿ¥¨8Ö™üžì1J$512f20b2-dc83-45d4-8da0-b23da2beee33

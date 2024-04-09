@@ -1,7 +1,5 @@
 import React, {ReactNode} from 'react';
 import type {Metadata} from 'next';
-import Link from 'next/link';
-import Image from 'next/image';
 import getAllBuildings from "@/lib/get-all-buildings";
 import buildingsAsGeoJSON from "@/lib/get-all-buildings-geojson";
 import MapClientLayout from "@/components/map-client-layout";
